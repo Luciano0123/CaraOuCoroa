@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaraOuCoroa.Views.CoinVeiw"
+             Title="CoinVeiw">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="coinIMG"
+                Source="cara.jpeg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                x:Name="CoinTxt"
+                Text=""
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" 
+                FontSize="Medium"
+                TextColor="Black"
+            />
+
+            <Picker x:Name="pickerCoin"
+                Title="Cara ou Coroa" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Cara</x:String>
+                        <x:String>Coroa</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button
+                x:Name="PlayBtn"
+                Text="Jogar Moeda" 
+                Clicked="PlayBtn_Clicked"
+                BackgroundColor="Black"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
