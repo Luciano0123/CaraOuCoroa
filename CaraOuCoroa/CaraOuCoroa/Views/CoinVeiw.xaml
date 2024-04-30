@@ -16,7 +16,7 @@
 
             <Label
                 x:Name="CoinTxt"
-                Text=""
+                Text="{Binding Resultado}"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" 
                 FontSize="Medium"

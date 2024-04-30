@@ -1,4 +1,5 @@
 using CaraOuCoroa.Models;
+using CaraOuCoroa.ViewModels;
 
 namespace CaraOuCoroa.Views;
 
@@ -8,6 +9,8 @@ public partial class CoinVeiw : ContentPage
 	{
 		InitializeComponent();
         pickerCoin.SelectedIndex = 0;
+
+		this.BindingContext = new CoinViewModel();
 	}
 	private void PlayBtn_Clicked(object sender, EventArgs e)
 	{

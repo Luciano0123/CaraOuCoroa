@@ -15,7 +15,7 @@ namespace CaraOuCoroa.Models
             int ladoSorteado = new Random().Next(2);
 
             Side = ladoSorteado == 0 ? "Cara" : "Coroa";
-            String resultado = Side == ladoEscolhido ? $"Prbens, tu acertastes {ladoEscolhido} " : $"calvo desgramado, tu errou não era {ladoEscolhido}";
+            String resultado = Side == ladoEscolhido ? $"Parabens, tu acertastes {ladoEscolhido} " : $"calvo desgramado, tu errou não era {ladoEscolhido}";
             return (resultado);
         }
     }
